@@ -1,0 +1,26 @@
+
+    
+
+
+
+<div class="container mt-5">
+  <form>
+  <div class="mb-3">
+    <label for="image-name" class="form-label">image name</label>
+    <input type="text" class="form-control" id="image-name" #name>
+  </div>
+  <div class="mb-3">
+    <label for="image-url" class="form-label">image url</label>
+    <input type="url" class="form-control" id="image-url" #url>
+  </div>
+ 
+  <button type="button" class="btn btn-primary" (click)="addImage(url, name)">add imag</button>
+</form>
+
+
+</div>
+<app-display-cards [cardsArray]="imagesArray"></app-display-cards>
+<!-- <app-display-images *ngFor="let img of imagesArray;  let i = index" 
+      [displayImages]="img" >  
+</app-display-images> -->
+
